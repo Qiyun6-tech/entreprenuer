@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POY-SIAN - Натуральные решения для вашего здоровья</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            background-color: #f8f8f8;
+        }
+        header .logo img {
+            width: 150px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .cta {
+            background-color: #ff6f61;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .hero {
+            background: <img src="下载 (1).jpg"' alt="cover"> no-repeat center center/cover;
+            
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 48px;
+        }
+        .hero p {
+            font-size: 24px;
+        }
+        section {
+            padding: 60px 0;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .about p, .values p {
+            text-align: center;
+            margin: 0 auto 20px;
+            max-width: 600px;
+        }
+        .product-images, .values-grid, .team-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .product-images img, .team-member img {
+            width: 200px;
+            border-radius: 10px;
+        }
+        .benefits {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 0;
+        }
+        .benefits li {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .value-item, .team-member {
+            text-align: center;
+            max-width: 200px;
+        }
+        .reviews-carousel {
+            display: flex;
+            overflow-x: scroll;
+            gap: 20px;
+            scroll-snap-type: x mandatory;
+        }
+        .review-item {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 300px;
+            scroll-snap-align: center;
+            text-align: center;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="green.jpg" alt="POY-SIAN">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">О продукте</a></li>
+                    <li><a href="#values">Ценности</a></li>
+                    <li><a href="#team">Команда</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="cta">Купить сейчас</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>POY-SIAN: Натуральные решения для вашего здоровья и благополучия</h1>
+            <p>Быстрое и эффективное устранение усталости и повышение концентрации</p>
+            <a href="#about" class="cta">Узнать больше</a>
+        </div>
+    </section>
+
+    <!-- About Product -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>О продукте</h2>
+            <p>Краткое описание продукта и его уникальных свойств.</p>
+            <div class="product-images">
+                <img src="shopping.jpg" alt="Product Image">
+                <img src="images (1).jpg" alt="Product Image">
+            </div>
+            <ul class="benefits">
+                <li>Быстродействие</li>
+                <li>Портативность</li>
+                <li>Натуральные ингредиенты</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Company Values -->
+    <section id="values" class="values">
+        <div class="container">
+            <h2>Ценности компании</h2>
+            <div class="values-grid">
+                <div class="value-item">
+                    <img src="images.jpg" alt="Quality">
+                    <h3>Качество</h3>
+                    <p>Обеспечиваем высокое качество наших продуктов.</p>
+                </div>
+                <div class="value-item">
+                    <img src="下载.jpg" alt="Integrity">
+                    <h3>Целостность</h3>
+                    <p>Придерживаемся честности и открытости.</p>
+                </div>
+                <div class="value-item">
+                    <img src="innovation.jpg" alt="Innovation">
+                    <h3>Инновации</h3>
+                    <p>Ищем новые способы улучшения продуктов.</p>
+                </div>
+                <div class="value-item">
+                    <img src="focus.jpg" alt="Customer Focus">
+                    <h3>Ориентация на клиента</h3>
+                    <p>Ставим потребности клиентов на первое место.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2>Отзывы клиентов</h2>
+            <div class="reviews-carousel">
+                <div class="review-item">
+                    <p>"Отличный продукт! Помогает мне оставаться бодрым в течение всего дня."</p>
+                    <h3>Анна Иванова</h3>
+                </div>
+                <div class="review-item">
+                    <p>"Очень доволен покупкой. Натуральный и эффективный."</p>
+                    <h3>Иван Петров</h3>
+                </div>
+                <!-- Add more reviews as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2>Наша команда</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                     <img src="我.jpg" alt="Сяо Ханьчжи">
+                    <h3>Сяо Ханьчжи</h3>
+                    <p>Финансовый отдел</p>
+                </div>
+                <div class="team-member">
+                        <img src="立云.jpg" alt="Сяо Лиюнь">
+                    <h3>Сяо Лиюнь</h3>
+                    <p>Председатель</p>
+                </div>
+                <div class="team-member">
+                      <img src="休林1.jpg" alt="Сюэ Сюлинь">
+                    <h3>Сюэ Сюлинь</h3>
+                    <p>Отдел маркетинга</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="contact-info">
+                <p>Электронная почта: info@poy-sian.com</p>
+                <p>Телефон: +86 123 4567 890</p>
+            </div>
+            <p>&copy; 2024 POY-SIAN. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
